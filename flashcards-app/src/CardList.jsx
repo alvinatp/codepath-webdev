@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Flashcard from './Flashcard';
+import React, { useState } from "react";
+import Flashcard from "./Flashcard";
 
 const CardList = ({ cards }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
