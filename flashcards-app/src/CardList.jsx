@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Flashcard from "./Flashcard";
+import React, { useState } from 'react';
+import Flashcard from './Flashcard';
 
 const CardList = ({ cards }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -15,11 +15,15 @@ const CardList = ({ cards }) => {
     setShowAnswer(!showAnswer);
   };
 
+  const currentCard = cards[currentCardIndex];
+
   return (
     <div>
       <Flashcard
-        question={cards[currentCardIndex].question}
-        answer={cards[currentCardIndex].answer}
+        question={currentCard.question}
+        answer={currentCard.answer}
+        image={currentCard.image}
+        difficulty={currentCard.difficulty}
         showAnswer={showAnswer}
         onClick={handleCardClick}
       />

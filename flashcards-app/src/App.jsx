@@ -7,7 +7,7 @@ const App = () => {
       id: 1,
       question: "What does CPU stand for?",
       answer: "Central Processing Unit",
-      image: "/images/oop.png",
+      image: "src/images/oop.png",
       difficulty: "easy",
     },
     {
@@ -21,7 +21,7 @@ const App = () => {
       question: "Explain the concept of recursion.",
       answer:
         "Recursion is a programming concept where a function calls itself to solve a problem by breaking it down into smaller, similar sub-problems.",
-      image: "/images/recursion.jpg",
+      image: "src/images/recursion.jpg",
       difficulty: "hard",
     },
     {
